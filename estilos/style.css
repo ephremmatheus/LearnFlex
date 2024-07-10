@@ -53,6 +53,23 @@ a:visited{
     text-decoration: none;
 }
 
+p{
+    line-height:21.82px;
+    padding: 0px 10px;
+}
+
+.section_titulo{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom:10px ;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
 /**********************************/
 /* 2. Menu
 /**********************************/
@@ -67,7 +84,7 @@ a:visited{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 960px;
+    max-width: 1000px;
     margin: 0px auto;
     flex-wrap: wrap;
 
@@ -115,6 +132,50 @@ hr{
 /**********************************/
 /* 4. Quem somos
 /**********************************/
+
+.somos{
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+.somos-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.somos-cont_txt{
+    flex-grow: 6;
+    flex-shrink: 1;
+    flex-basis: 160px;
+}
+
+.somos-cont_img{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 360px;
+}
+
+
+
+/* 
+.quemsomos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quemsomos-txt > p{
+    max-width: 600px;
+    margin-top: 15px;
+    line-height: 28px;
+}
+
+.quemsomos-img > img{
+    width: 400px;
+} */
 
 /**********************************/
 /* 5. Nossos cursos
