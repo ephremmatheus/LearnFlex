@@ -158,28 +158,35 @@ hr{
 }
 
 
-
-/* 
-.quemsomos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.quemsomos-txt > p{
-    max-width: 600px;
-    margin-top: 15px;
-    line-height: 28px;
-}
-
-.quemsomos-img > img{
-    width: 400px;
-} */
-
 /**********************************/
 /* 5. Nossos cursos
 /**********************************/
+
+.nossos-cursos{
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+.nc-cont{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+
+.nc_opcoes{
+    margin: 0 20px;
+    width: 280px;
+}
+
+.section_subtitulo{
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+    font-weight: 500;
+}
+
+
 
 /**********************************/
 /* 6. Planos
