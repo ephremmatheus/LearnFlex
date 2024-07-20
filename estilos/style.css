@@ -31,6 +31,7 @@
     --corazul-cl: #219EBC;
     --corazul-cl2: #8ECAE6;
     --coramarelo: #FFB703;
+    --coramarelo-cl: #FFCB47;
     --corlaranja: #FB8500;
     --corbranco:#f5f5f5;
 }
@@ -44,11 +45,11 @@ body{
     font-family: var(--fonte);
 }
 
-a,
-a:hover, 
-a:active,
-a:link,
-a:visited{
+header a,
+header a:hover, 
+header a:active,
+header a:link,
+header a:visited{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -120,13 +121,13 @@ img{
     padding: 25px 0px;
 }
 
-hr{
+body > hr{
     height: 2px;
     width: 140px;
     border: none;
     margin: 20px auto;
     
-    background-color: var(--coramarelo);
+    background-color: var(--coramarelo-cl);
 }
 
 /**********************************/
@@ -191,6 +192,117 @@ hr{
 /**********************************/
 /* 6. Planos
 /**********************************/
+.planos{
+    background-color: var(--corazul-cl2);
+}
+
+.planos-c{
+    max-width: 960px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+}
+
+.plano{
+    width: 290px;
+    margin: 10px;
+    border:2px solid var(--coramarelo-cl);
+}
+
+
+.plano_titulo{
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 10px auto;
+}
+
+.plano_preco{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    display: block;
+}
+
+.plano_preco sup{
+    position: relative;
+    top: -5px;
+    font-size: 0.7em;
+}
+
+.plano_divisor{
+    height: 2px;
+    width: 20px;
+    border: none;
+    margin: 5px auto;
+
+    background-color: var(--coramarelo-cl);
+}
+
+.plano-lista{
+    list-style-position: inside;
+    display: block;
+    max-width: 215px;
+    margin: 0 auto;
+
+}
+
+.plano-lista_item{
+    margin: 10px 0;
+    font-style: italic;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plano-lista_item::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+    display: block;
+    border-radius: 10px;
+    background-color: var(--coramarelo-cl);
+}
+
+.plano_botao-comprar{
+    font-size: 1.2em;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    max-width: 180px;
+    margin: 15px auto;
+    border: 2px solid var(--coramarelo-cl);
+    padding: 10px;
+    
+    
+}
+
+.plano:last-child{
+    background-color: var(--coramarelo);
+}
+
+.plano:last-child, .plano:last-child .plano_botao-comprar{
+    border: 2px solid var(--corazul-esc);
+}
+
+
+.plano:last-child .plano_divisor, .plano:last-child .plano-lista_item::before{
+    background-color: var(--corazul-esc);
+}
+
+@media screen and (max-width: 800px) {
+    .planos-c{
+        flex-wrap: wrap-reverse;
+    }
+}
+
 
 /**********************************/
 /* 7. Vantagens
