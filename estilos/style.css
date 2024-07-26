@@ -308,6 +308,62 @@ body > hr{
 /* 7. Vantagens
 /**********************************/
 
+.vantagem-c{
+    max-width: 960px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.vantagem-opcoes{
+    max-width: 240px;
+    margin: 10px;
+    
+}
+
+
+.vantagem-titulo{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom:5px ;
+}
+
+.vantagem-titulo::before{
+    content:"";
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.vantagem-opcoes:nth-of-type(3n+1) .vantagem-titulo::before{
+    background-color: var(--coramarelo);
+}
+
+.vantagem-opcoes:nth-of-type(3n+2) .vantagem-titulo::before{
+    background-color: var(--corazul-cl);
+}
+
+.vantagem-opcoes:nth-of-type(3n+3) .vantagem-titulo::before{
+    background-color: var(--corlaranja);
+}
+
+@media screen and (max-width: 800px){
+    .vantagem-opcoes{
+        max-width: 220px;
+    }
+
+    .vantagem-opcoes:nth-of-type(even) .vantagem-titulo::before{
+        background-color: var(--corazul-cl);
+    }
+
+    .vantagem-opcoes:nth-of-type(odd) .vantagem-titulo::before{
+        background-color: var(--corlaranja);
+}
+
 /**********************************/
 /* 8. Newsletter
 /**********************************/
